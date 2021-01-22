@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace EvenMoreStrings
 {
@@ -6,7 +7,15 @@ namespace EvenMoreStrings
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var builder = new StringBuilder();
+            builder.Append('-', 10);
+            builder.AppendLine();
+            builder.Append("Header");
+            builder.AppendLine();
+            builder.Append('-', 10);
+            Console.WriteLine(builder);
+
+
         }
     }
 }
