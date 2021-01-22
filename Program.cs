@@ -7,7 +7,7 @@ namespace EvenMoreStrings
     {
         static void Main(string[] args)
         {
-            var builder = new StringBuilder();
+            var builder = new StringBuilder("Hello World");
             builder.Append('-', 10);
             builder.AppendLine();
             builder.Append("Header");
@@ -20,8 +20,6 @@ namespace EvenMoreStrings
 
             builder.Insert(0, new string('-', 10));
             Console.WriteLine(builder);
-
-
         }
     }
 }
