@@ -13,6 +13,8 @@ namespace EvenMoreStrings
             builder.Append("Header");
             builder.AppendLine();
             builder.Append('-', 10);
+
+            builder.Replace('-', '+');
             Console.WriteLine(builder);
 
 
